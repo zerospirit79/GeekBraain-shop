@@ -200,6 +200,10 @@ span {
     background-color: white;
 }
 
+.h3_goods {
+    text-align: center;
+}
+
 .product_box {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -426,7 +430,7 @@ span {
     height: 441px;
     background-image: url(img/suscribe.png);
     opacity: 0.8;
-    background-position: center;
+    background-position: center -51px;
     background-size: cover;
     display: flex;
 }
@@ -653,6 +657,7 @@ span {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    align-items: center;
     Width: 1142px;
     height: 731px;
     margin: 0 auto;
