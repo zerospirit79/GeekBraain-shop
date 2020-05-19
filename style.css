@@ -107,6 +107,14 @@ a {
     justify-content: center;
 }
 
+.menu_list {
+    position: relative;
+}
+
+.menu__list:hover .drop {
+    display: flex;
+}
+
 .menu__link {
     font-size: 14px;
     font-weight: bold;
@@ -128,14 +136,13 @@ a {
     height: 613px;
     background-image: url(img/promo.png);
     background-position: 0 -51px;
-    position: relative;
     margin-bottom: 98px;
 }
 
 .promo_h1 {
-    position: absolute;
-    top: 375px;
-    left: 254px;
+    margin-left: 254px;
+    margin-bottom: 382px;
+    margin-top: -503px;
     padding-left: 12px;
     border-left: 12px solid rgba(241, 109, 127, 1);
     font-size: 40px;
@@ -154,6 +161,44 @@ a {
 span {
     color: rgba(241, 109, 127, 1);
     font-weight: 900;
+}
+
+
+.drop {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 12px 20px;
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    width: 846px;
+    height: 310px;
+    flex-direction: column;
+}
+
+
+
+.drop_h3 {
+    font-size: 14px;
+    color: rgba(35, 35, 35, 1);
+    letter-spacing: 0.03em;
+    padding: 8px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(232, 232, 232, 1);
+    width: 234px;
+    margin-bottom: 8px;
+}
+
+.drop_ul {
+    list-style-type: none;
+}
+
+.drop_a {
+    font-size: 14px;
+    color: rgba(100, 100, 100, 1);
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 28px;
 }
 
 .container1 {
@@ -611,5 +656,23 @@ span {
 
 .material {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 398px;
+}
+
+.line {
+    width: 142px;
+    height: 2px;
+    color: #ccc;
+    position: relative;
+}
+
+.topline {
+    position: absolute;
+    width: 64px;
+    height: 4px;
+    background-color: #F16D7F;
+    top: -2px;
+    left: 42px;
 }
