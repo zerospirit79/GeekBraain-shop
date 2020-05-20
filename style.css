@@ -199,8 +199,12 @@ span {
     text-transform: uppercase;
 }
 
-.drop_raiting {
+.header__right:hover .drop_raiting {
     display: flex;
+}
+
+.drop_raiting {
+    display: none;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 5px;
     padding: 12px 20px;
@@ -209,6 +213,46 @@ span {
     margin-top: 41px;
     padding: 12px 20px;
     flex-direction: column;
+}
+
+.rating_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p_rating_price {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 1);
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+
+.a_rating {
+    height: 50px;
+    width: 225px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(241, 109, 127, 1);
+    text-align: center;
+    line-height: 50px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.a_rating_card {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(74, 74, 74, 1);
+    text-transform: uppercase;
+    height: 50px;
+    width: 225px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 234, 234, 1);
+    text-align: center;
+    line-height: 50px;
 }
 
 .raiting_card {
@@ -257,7 +301,6 @@ span {
 .rating-mini>span.active {
     color: gold;
 }
-
 
 
 .drop {
@@ -418,6 +461,7 @@ span {
 .product_add img {
     width: 23px;
     height: 23px;
+    margin-right: 8px;
 }
 
 .p-goods {
@@ -705,6 +749,7 @@ span {
     justify-content: space-between;
 }
 
+
 .breadcrumb_li a {
     font-size: 14px;
     font-weight: 300;
@@ -746,6 +791,8 @@ span {
     margin: 0 auto;
     margin-top: -86px;
     background-color: white;
+    border: 1px solid rgba(42, 42, 42, 0.15);
+    margin-bottom: 142px;
 }
 
 .material {
@@ -769,4 +816,195 @@ span {
     background-color: #F16D7F;
     top: -2px;
     left: 42px;
+}
+
+.woman_product_img {
+    background-color: rgba(233, 233, 233, 1);
+}
+
+.woman_product_img img {
+    width: 50%;
+    margin-left: 60px;
+}
+
+.product:hover .woman_product_img {
+    filter: brightness(40%);
+}
+
+.h2_product_description {
+    width: 642px;
+    text-align: center;
+}
+
+.p_description_product {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+    width: 642px;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+    padding-bottom: 43px;
+}
+
+.choice_characteristic {
+    display: flex;
+    width: 642px;
+    justify-content: space-around;
+}
+
+.h3_goods {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgba(77, 77, 77, 1);
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.h3_color {
+    padding-bottom: 26px;
+}
+
+.color_choise {
+    height: 35px;
+    width: 144px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 234, 234, 1);
+    position: relative;
+    padding-left: 37px;
+}
+
+.color_choise_img {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: rgba(239, 91, 112, 1);
+    margin-top: 12px;
+    margin-left: -132px;
+}
+
+.chioce_to_card {
+    height: 55px;
+    width: 537px;
+    border: 1px solid rgba(239, 91, 112, 1);
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(239, 91, 112, 1);
+    line-height: 55px;
+    text-align: center;
+}
+
+.chioce_to_card img {
+    margin-right: 15px;
+}
+
+.down {
+    position: absolute;
+    margin-left: -23px;
+    margin-top: 10px;
+    color: gray;
+    width: 14px;
+    height: 14px;
+}
+
+/* manwear page */
+.catalog {
+    margin-top: 59px;
+    display: flex;
+}
+
+.catalog_menu {
+    margin-left: 230px;
+}
+
+.a_catalog {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-left: 5px solid rgba(239, 91, 112, 1);
+    padding: 12px;
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+    width: 243px;
+}
+
+.li_catalog {
+    list-style-type: none;
+}
+
+.sortup {
+    color: rgba(239, 91, 112, 1);
+    padding-left: 137px;
+}
+
+.sortdown {
+    color: rgba(111, 110, 110, 1);
+    padding-left: 137px;
+}
+
+.brand_catalog .sortdown {
+    padding-left: 155px;
+}
+
+.catalog_a {
+    font-size: 14px;
+    color: rgba(111, 110, 110, 1);
+    line-height: 33px;
+    padding-left: 18px;
+}
+
+.ul_catalog {
+    padding-top: 22px;
+}
+
+.brand_catalog {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.brand_catalog a {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(111, 110, 110, 1);
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.disainer_catalog a {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(111, 110, 110, 1);
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.man_characters {
+    margin-left: 49px;
+}
+
+.h3_trending {
+    padding-bottom: 35px;
+}
+
+.brand {
+    display: flex;
+    height: 39px;
+    width: 176px;
+    flex-wrap: wrap;
+}
+
+.a_brand {
+    font-size: 14px;
+    color: rgba(111, 110, 110, 1);
+    line-height: 26px;
+}
+
+.brand p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    color: rgba(223, 223, 223, 1);
+    line-height: 26px;
 }

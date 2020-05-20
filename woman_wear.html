@@ -19,8 +19,8 @@
                         <span>D</span>
                     </a>
                     <form class="header__form" action="#">
-                        <div>Browse
-                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <div class="form_header"><a href="#" class="browse">Browse
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </div>
                         <input type="text" placeholder="Search for Item...">
                         <button type="submit"><img src="img/search.png" alt="search"></button>
@@ -39,10 +39,10 @@
                         <a href="index.html" class="menu__link">Home</a>
                     </li>
                     <li class="menu__list">
-                        <a href="#" class="menu__link">Man</a>
+                        <a href="man.html" class="menu__link">Man</a>
                     </li>
                     <li class="menu__list">
-                        <a href="#" class="menu__link">Women</a>
+                        <a href="woman_wear.html" class="menu__link">Women</a>
                     </li>
                     <li class="menu__list">
                         <a href="#" class="menu__link">Kids</a>
@@ -79,9 +79,9 @@
         <div class="product_description center">
             <p class="p_product_description"><span>WOMEN COLLECTION</span></p>
             <div>
-            <hr class="line">
-            <hr class="topline">
-        </div>
+                <hr class="line">
+                <hr class="topline">
+            </div>
             <h2 class="h2_product_description">Moschino Cheap And Chic</h2>
             <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
                 collaborative architectures before cutting-edge services. Completely visualize parallel core
@@ -90,7 +90,28 @@
                 <p>MATERIAL: <b>COTTON</b></p>
                 <p>DESIGNER: <b>BINBURHAN</b></p>
             </div>
-            <p><span>$561</span></p>
+            <p class="p_description_product"><span>$561</span></p>
+            <div class="choice_characteristic">
+                <div class="choice_color">
+                    <h3 class="h3_color">CHOOSE COLOR</h3>
+                    <input type="text" placeholder="Red" class="color_choise">
+                    <img src="#" alt="" class="color_choise_img">
+                    <i class="fa fa-angle-down down"></i>
+                </div>
+                <div class="cchoice_size">
+                    <h3 class="h3_color">CHOOSE SIZE</h3>
+                    <input type="text" placeholder="XXL" class="color_choise">
+                    <img src="#" alt="" class="color_choise_img">
+                    <i class="fa fa-angle-down down" aria-hidden="true"></i>
+                </div>
+                <div class="choice_qty">
+                    <h3 class="h3_color">QUANTITY</h3>
+                    <input type="text" placeholder="2" class="color_choise">
+                    <img src="#" alt="" class="color_choise_img">
+                    <i class="fa fa-angle-down down" aria-hidden="true"></i>
+                </div>
+            </div>
+            <a href="#" class="chioce_to_card"><img src="img/red_card.png" alt=""><span>Add to Cart</span></a>
         </div>
         <div class="list_of_goods center">
             <div class="goods_of_list center">
@@ -98,25 +119,30 @@
             </div>
             <div class="product_box center">
                 <div class="product">
-                    <a href="#"><img src="img/woman_wear1.png" alt="" class="product_img"></a>
+                    <div class="woman_product_img">
+                        <a href="#"><img src="img/woman_wear1.png" alt="" class="product_img"></a>
+                    </div>
                     <div class="product_content">
-                        <a href="" class="pdoduct_name">Mango People T-shirt</a>
+                        <a href="" class="pdoduct_name">BLAZE LEGGINGS</a>
                         <p class="product_price"><span>$52.00</span></p>
                     </div>
                     <a href="" class="product_add"><img src="img/white-card.png" alt="card">Add to card</a>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/woman_wear2.png" alt="" class="product_img"></a>
+                    <div class="woman_product_img">
+                        <a href="#"><img src="img/woman_wear2.png" alt="" class="product_img"></a></div>
                     <div class="product_content">
-                        <a href="" class="pdoduct_name">Mango People T-shirt</a>
+                        <a href="" class="pdoduct_name">ALEXA SWEATER</a>
                         <p class="product_price"><span>$52.00</span></p>
                     </div>
                     <a href="" class="product_add"><img src="img/white-card.png" alt="card">Add to card</a>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/woman_wear3.png" alt="" class="product_img"></a>
+                    <div class="woman_product_img">
+                        <a href="#"><img src="img/woman_wear3.png" alt="" class="product_img"></a>
+                    </div>
                     <div class="product_content">
-                        <a href="" class="pdoduct_name">Mango People T-shirt</a>
+                        <a href="" class="pdoduct_name">AGNES TOP</a>
                         <p class="product_price"><span>$52.00</span></p>
                     </div>
                     <a href="" class="product_add"><img src="img/white-card.png" alt="card">Add to card</a>
@@ -124,7 +150,7 @@
                 <div class="product">
                     <a href="#"><img src="img/woman_wear4.png" alt="" class="product_img"></a>
                     <div class="product_content">
-                        <a href="" class="pdoduct_name">Mango People T-shirt</a>
+                        <a href="" class="pdoduct_name">SYLVA SWEATER</a>
                         <p class="product_price"><span>$52.00</span></p>
                     </div>
                     <a href="" class="product_add"><img src="img/white-card.png" alt="card">Add to card</a>
@@ -195,8 +221,8 @@
                     <li class="footer_link">
                         <span>SHOP CATEGORYY</span>
                     </li>
-                    <li class="footer_link"><a href="#">Men</a></li>
-                    <li class="footer_link"><a href="#">Women</a></li>
+                    <li class="footer_link"><a href="man.html">Men</a></li>
+                    <li class="footer_link"><a href="woman_wear.html">Women</a></li>
                     <li class="footer_link"><a href="#">Child</a></li>
                     <li class="footer_link"><a href="#">Apparel</a></li>
                     <li class="footer_link"><a href="#">Brows All</a></li>
