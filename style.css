@@ -42,13 +42,17 @@ a {
     align-items: center;
 }
 
+.header__right {
+    position: relative;
+}
+
 .header__form {
     display: flex;
     align-items: center;
     margin-left: 37px;
 }
 
-.header__form div {
+.form_header {
     width: 87px;
     background-color: rgb(180, 179, 179);
     font-weight: 300;
@@ -115,6 +119,15 @@ a {
     display: flex;
 }
 
+.browse {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(34, 34, 34, 1);
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+}
+
 .menu__link {
     font-size: 14px;
     font-weight: bold;
@@ -163,6 +176,89 @@ span {
     font-weight: 900;
 }
 
+.drop_down {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    display: none;
+    clear: both;
+    text-align: left;
+    width: fit-content;
+    padding: 12px 20px;
+    position: absolute;
+    flex-direction: column;
+}
+
+.form_header:hover .drop_down {
+    display: flex;
+}
+
+.h3_raiting {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 1);
+    text-transform: uppercase;
+}
+
+.drop_raiting {
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 12px 20px;
+    position: absolute;
+    align-self: baseline;
+    margin-top: 41px;
+    padding: 12px 20px;
+    flex-direction: column;
+}
+
+.raiting_card {
+    display: flex;
+    width: fit-content;
+    width: 243px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px 17px;
+    border-bottom: 1px solid rgba(237, 237, 237, 0.75);
+}
+
+.cross {
+    background-color: #ccc;
+    text-align: center;
+    margin-left: 17px;
+    margin-top: 35px;
+    border-radius: 5px;
+    height: 17px;
+    width: 17px;
+
+}
+
+.text_drop {
+    padding-left: 14px;
+}
+
+.rating-mini {
+    display: inline-block;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.rating-mini span {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: lightgrey;
+}
+
+.rating-mini>span:before {
+    content: '★';
+}
+
+.rating-mini>span.active {
+    color: gold;
+}
+
+
 
 .drop {
     background-color: rgba(255, 255, 255, 1);
@@ -175,8 +271,6 @@ span {
     height: 310px;
     flex-direction: column;
 }
-
-
 
 .drop_h3 {
     font-size: 14px;
