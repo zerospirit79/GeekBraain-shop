@@ -498,7 +498,7 @@ span {
 
 .offer_content {
     position: relative;
-    background-image: url(img/offer.png);
+    background: url(img/backgound2_offer.png), url(img/offer.png);
     height: 623px;
     width: 767px;
 }
@@ -552,8 +552,7 @@ span {
 
 .subscribe {
     height: 441px;
-    background-image: url(img/suscribe.png);
-    opacity: 0.8;
+    background: url(img/suscribe_effect.png), url(img/suscribe.png);
     background-position: center -51px;
     background-size: cover;
     display: flex;
@@ -562,26 +561,30 @@ span {
 .padin {
     padding-right: 164px;
     padding-top: 110px;
-    position: relative;
-
+    display: flex;
+    flex-direction: row;
 }
 
-.rewiev img {
+.padin img {
     border-radius: 50%;
-    padding-bottom: 50px;
+    height: 83px;
+    width: 83px;
+    margin-right: 28px;
 }
 
 .p-rivew {
-    margin-top: -60px;
+    padding-top: 16px;
+    padding-bottom: 45px;
 }
 
-.rewiev p {
-    float: right;
-    width: 386px;
+.rewiev {
+    display: flex;
+    flex-direction: column;
     font-size: 18px;
     color: rgba(34, 34, 36, 1);
     letter-spacing: 0.03em;
     line-height: 26px;
+    width: 426px;
 }
 
 .form {
@@ -908,6 +911,10 @@ span {
 }
 
 /* manwear page */
+.menu_active_link_man {
+    border-bottom: 3px solid rgba(239, 91, 112, 1);
+}
+
 .catalog {
     margin-top: 59px;
     display: flex;
@@ -951,6 +958,10 @@ span {
     color: rgba(111, 110, 110, 1);
     line-height: 33px;
     padding-left: 18px;
+}
+
+.catalog_a:hover {
+    color: rgba(239, 91, 112, 1);
 }
 
 .ul_catalog {
@@ -999,7 +1010,7 @@ span {
     padding-right: 143px;
 }
 
-.brand {
+.catalog_of_brand {
     display: flex;
     height: 39px;
     width: 176px;
@@ -1012,7 +1023,11 @@ span {
     line-height: 26px;
 }
 
-.brand p {
+.a_brand:hover {
+    color: rgba(239, 91, 112, 1);
+}
+
+.catalog_of_brand p {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 14px;
