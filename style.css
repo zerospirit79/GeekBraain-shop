@@ -73,6 +73,7 @@ a {
 .header__form button {
     height: 38px;
     width: 38px;
+    margin-left: -5px;
 }
 
 .header__cart {
@@ -498,12 +499,12 @@ span {
     background: url(img/backgound2_offer.png), url(img/offer.png);
     height: 623px;
     background-size: cover;
-    background-position: center -51px;
+    background-position: center;
 }
 
 .h1-offer {
     position: absolute;
-    top: 3126px;
+    top: 146px;
     padding-left: 39px;
     height: 78px;
     letter-spacing: 0.03em;
@@ -516,10 +517,11 @@ span {
     letter-spacing: 0.03em;
 }
 
-.offer ul {
+.offer_content ul {
     position: absolute;
-    top: 3100px;
-    padding-left: 803px;
+    margin-left: 943px;
+    background-color: rgba(34, 34, 36, 1);
+    padding: 48px 43px 66px 35px;
 }
 
 .offer_list {
@@ -762,7 +764,7 @@ span {
 
 .breadcrumb_li a:hover {
     color: #F16D7F;
-
+    font-weight: 600;
 }
 
 .image_slide {
