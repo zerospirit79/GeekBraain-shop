@@ -201,6 +201,7 @@ span {
 
 .header__right:hover .drop_raiting {
     display: flex;
+
 }
 
 .drop_raiting {
@@ -266,14 +267,10 @@ span {
 }
 
 .cross {
-    background-color: #ccc;
+    color: #ccc;
     text-align: center;
     margin-left: 17px;
     margin-top: 35px;
-    border-radius: 5px;
-    height: 17px;
-    width: 17px;
-
 }
 
 .text_drop {
@@ -500,7 +497,8 @@ span {
     position: relative;
     background: url(img/backgound2_offer.png), url(img/offer.png);
     height: 623px;
-    width: 767px;
+    background-size: cover;
+    background-position: center -51px;
 }
 
 .h1-offer {
