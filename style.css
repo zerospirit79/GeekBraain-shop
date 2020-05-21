@@ -1385,3 +1385,88 @@ span {
     text-align: center;
     line-height: 50px;
 }
+
+.login_fogot {
+    display: flex;
+    flex-direction: row;
+}
+
+.guest_regist_left_side {
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.guest_regist_right_side {
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.guest_regist {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_data {
+    display: flex;
+
+}
+
+.guest_regist_side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 974px;
+}
+
+.first_block_registr {
+    margin-top: 89px;
+    margin-left: 230px;
+}
+
+.regist_adress {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 1);
+    text-transform: uppercase;
+    margin-bottom: 39px;
+}
+
+.h4_registr {
+    font-size: 13px;
+    color: rgba(34, 34, 34, 1);
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.p_registr {
+    font-size: 13px;
+    color: rgba(179, 178, 178, 1);
+    line-height: 20px;
+}
+
+.registr_data {
+    font-size: 16px;
+    color: rgba(34, 34, 34, 1);
+    line-height: 20px;
+}
+
+.registr_continue {
+    height: 50px;
+    width: 180px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 234, 234, 1);
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(74, 74, 74, 1);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+}
+
+.angle-double {
+    color: rgba(179, 178, 178, 1);
+}
