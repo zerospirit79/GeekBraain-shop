@@ -1461,6 +1461,11 @@ span {
     line-height: 50px;
 }
 
+// checkout page
+.registr_info {
+    padding-bottom: 93px;
+}
+
 .login_fogot {
     display: flex;
     flex-direction: row;
@@ -1487,7 +1492,15 @@ span {
 
 .input_data {
     display: flex;
+    flex-direction: column;
 
+    & label {
+        padding-left: 14px;
+    }
+}
+
+#chekout {
+    margin-bottom: 19px;
 }
 
 .guest_regist_side {
@@ -1500,6 +1513,16 @@ span {
 .first_block_registr {
     margin-top: 89px;
     margin-left: 230px;
+    padding-bottom: 79px;
+    width: 1141px;
+    border-bottom: 1px solid rgba(226, 226, 226, 1);
+}
+
+.another_block_registr {
+    margin-top: 34px;
+    margin-left: 230px;
+    width: 1141px;
+    border-bottom: 1px solid rgba(226, 226, 226, 1);
 }
 
 .regist_adress {
@@ -1527,6 +1550,12 @@ span {
     font-size: 16px;
     color: rgba(34, 34, 34, 1);
     line-height: 20px;
+
+}
+
+.data_registr {
+    padding-left: 32px;
+    padding-top: 17px;
 }
 
 .registr_continue {
@@ -1544,4 +1573,19 @@ span {
 
 .angle-double {
     color: rgba(179, 178, 178, 1);
+}
+
+.password {
+    height: 45px;
+    width: 390px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 234, 234, 1);
+    font-size: 16px;
+    color: rgba(34, 34, 34, 1);
+    line-height: 20px;
+    padding-left: 25px;
+}
+
+.registr_p {
+    padding-bottom: 32px;
 }

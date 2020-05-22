@@ -1592,6 +1592,10 @@ span {
   line-height: 50px;
 }
 
+.registr_info {
+  padding-bottom: 93px;
+}
+
 .login_fogot {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1644,6 +1648,18 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input_data label {
+  padding-left: 14px;
+}
+
+#chekout {
+  margin-bottom: 19px;
 }
 
 .guest_regist_side {
@@ -1663,6 +1679,16 @@ span {
 .first_block_registr {
   margin-top: 89px;
   margin-left: 230px;
+  padding-bottom: 79px;
+  width: 1141px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.another_block_registr {
+  margin-top: 34px;
+  margin-left: 230px;
+  width: 1141px;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .regist_adress {
@@ -1692,6 +1718,11 @@ span {
   line-height: 20px;
 }
 
+.data_registr {
+  padding-left: 32px;
+  padding-top: 17px;
+}
+
 .registr_continue {
   height: 50px;
   width: 180px;
@@ -1707,5 +1738,20 @@ span {
 
 .angle-double {
   color: #b3b2b2;
+}
+
+.password {
+  height: 45px;
+  width: 390px;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  font-size: 16px;
+  color: #222222;
+  line-height: 20px;
+  padding-left: 25px;
+}
+
+.registr_p {
+  padding-bottom: 32px;
 }
 /*# sourceMappingURL=style.css.map */
