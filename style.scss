@@ -1,5 +1,39 @@
 $colorSite: rgba(241, 109, 127, 1);
 
+@-webkit-keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -511,6 +545,12 @@ span {
         font-size: 13px;
         font-weight: bold;
         color: rgba(255, 255, 255, 1);
+        transition: all .3s;
+
+        &:hover {
+            border-color: $colorSite;
+            background-color: $colorSite;
+        }
     }
 
     &_add img {
@@ -697,6 +737,13 @@ span {
         background-color: $colorSite;
         color: white;
         cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            color: $colorSite;
+            background-color: white;
+
+        }
 
     }
 }
@@ -867,6 +914,7 @@ span {
         background-color: rgba(42, 42, 42, 0.15);
         text-align: center;
         line-height: 48px;
+        animation: pulsate-bck 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite both;
     }
 }
 
@@ -990,13 +1038,18 @@ span {
     transition: all 0.5s;
 
     &:hover {
-        border-color: white;
         color: white;
+        border-color: white;
         background-color: $colorSite;
+
+        & img {
+            content: url(img/white-card.png);
+        }
     }
 
     & img {
         margin-right: 15px;
+
     }
 }
 
@@ -1268,6 +1321,23 @@ span {
     font-size: 16px;
     font-weight: 300;
     color: rgba(196, 196, 196, 1);
+
+    &_active {
+        color: $colorSite;
+    }
+
+    & a {
+        font-size: 16px;
+        font-weight: 300;
+        color: rgba(196, 196, 196, 1);
+        transition: all 0.3s;
+
+        &:hover {
+            color: $colorSite;
+            font-size: 20px;
+
+        }
+    }
 }
 
 .catalog_viewall {
@@ -1281,6 +1351,13 @@ span {
     font-size: 16px;
     font-weight: 900;
     color: $colorSite;
+    transition: all 0.3s;
+
+    &:hover {
+        color: white;
+        background-color: $colorSite;
+        border-color: white;
+    }
 }
 
 .man_promo {
@@ -1407,6 +1484,13 @@ span {
     text-align: center;
     line-height: 50px;
     border: 1px solid rgba(234, 234, 234, 1);
+    transition: all .3s;
+
+    &:hover {
+        color: white;
+        border-color: $colorSite;
+        background-color: $colorSite;
+    }
 }
 
 .continous_shipping {
@@ -1419,6 +1503,13 @@ span {
     text-align: center;
     line-height: 50px;
     border: 1px solid rgba(234, 234, 234, 1);
+    transition: all .3s;
+
+    &:hover {
+        color: white;
+        border-color: $colorSite;
+        background-color: $colorSite;
+    }
 }
 
 .info_adres {
@@ -1460,6 +1551,13 @@ span {
     font-weight: bold;
     color: rgba(74, 74, 74, 1);
     text-transform: uppercase;
+    transition: all .3s;
+
+    &:hover {
+        color: white;
+        border-color: $colorSite;
+        background-color: $colorSite;
+    }
 }
 
 .copon {
@@ -1491,6 +1589,13 @@ span {
     background-color: rgba(239, 91, 112, 1);
     text-align: center;
     line-height: 50px;
+    transition: all .3s;
+
+    &:hover {
+        color: $colorSite;
+        border-color: white;
+        background-color: white;
+    }
 }
 
 // checkout page
