@@ -87,9 +87,15 @@ a {
     letter-spacing: 0.03em;
     line-height: 34px;
     height: 38px;
+    transition: all 0.3s;
 
     &:hover .drop_down {
         display: flex;
+    }
+
+    &:hover {
+        background-color: $colorSite;
+        color: white;
     }
 
 }
@@ -104,6 +110,13 @@ a {
     letter-spacing: 0.03em;
     line-height: 32px;
     background-color: $colorSite;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: white;
+        color: $colorSite;
+        border: 1px solid $colorSite;
+    }
 }
 
 .logo {
@@ -164,6 +177,13 @@ a {
     text-align: right;
     letter-spacing: 0.03em;
     line-height: 32px;
+    transition: all 0.3s;
+
+    &:hover {
+        color: white;
+        ;
+    }
+
 }
 
 
@@ -672,9 +692,10 @@ span {
         border-bottom-right-radius: 23px;
         height: 46px;
         width: 148px;
-        background-color: #F16D7F;
+        background-color: $colorSite;
         color: white;
         cursor: pointer;
+
     }
 }
 
