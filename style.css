@@ -484,6 +484,8 @@ span {
 .product:hover {
   -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .product_box {
@@ -842,6 +844,10 @@ span {
 
 .square_fa:hover {
   color: #f16d7f;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 /* womanwear page */
@@ -1044,6 +1050,14 @@ span {
   color: #ef5b70;
   line-height: 55px;
   text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.chioce_to_card:hover {
+  border-color: white;
+  color: white;
+  background-color: #f16d7f;
 }
 
 .chioce_to_card img {
@@ -1744,6 +1758,12 @@ span {
   padding-top: 17px;
 }
 
+.data_registr a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #222222;
+}
+
 .registr_continue {
   height: 50px;
   width: 180px;
@@ -1755,6 +1775,14 @@ span {
   text-transform: uppercase;
   text-align: center;
   line-height: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.registr_continue:hover {
+  background-color: #f16d7f;
+  border-color: white;
+  color: white;
 }
 
 .angle-double {
