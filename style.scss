@@ -98,6 +98,11 @@ a {
         height: 38px;
         width: 38px;
         margin-left: -5px;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $colorSite;
+        }
     }
 
     &__cart {
@@ -145,11 +150,26 @@ a {
     line-height: 32px;
     background-color: $colorSite;
     transition: all 0.3s;
+    display: flex;
+    flow-direction: row;
+    justify-content: space-around;
 
     &:hover {
         background-color: white;
         color: $colorSite;
         border: 1px solid $colorSite;
+
+        .caret-down-red {
+            color: $colorSite;
+        }
+    }
+
+    & .caret-down-red {
+        display: inline-block;
+        color: white;
+        height: 15px;
+        width: 15px;
+        margin-top: 8px;
     }
 }
 
@@ -212,12 +232,25 @@ a {
     letter-spacing: 0.03em;
     line-height: 32px;
     transition: all 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
     &:hover {
         color: white;
-        ;
+
+        .down-caret {
+            color: white;
+        }
     }
 
+    & .down-caret {
+        display: inline-block;
+        color: black;
+        height: 15px;
+        width: 15px;
+        margin-top: 8px;
+    }
 }
 
 
@@ -304,10 +337,17 @@ span {
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid $colorSite;
+    color: $colorSite;
     text-align: center;
     line-height: 50px;
     margin-top: 32px;
     margin-bottom: 16px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: $colorSite;
+        color: white;
+    }
 }
 
 .a_rating_card {
@@ -321,6 +361,13 @@ span {
     border: 1px solid rgba(234, 234, 234, 1);
     text-align: center;
     line-height: 50px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: rgba(74, 74, 74, 1);
+        color: rgba(255, 255, 255, 1);
+        border-color: rgba(255, 255, 255, 1);
+    }
 }
 
 .raiting_card {
@@ -338,6 +385,9 @@ span {
     text-align: center;
     margin-left: 17px;
     margin-top: 35px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
 }
 
 .text_drop {
@@ -585,6 +635,29 @@ span {
     line-height: 54px;
     display: block;
     margin-bottom: 113px;
+    display: flex;
+    flow-direction: row;
+    justify-content: center;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: white;
+        color: $colorSite;
+        border: 1px solid $colorSite;
+
+        .chevron-right {
+            color: $colorSite;
+        }
+    }
+
+    & .chevron-right {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        color: white;
+        margin-top: 18px;
+        margin-left: 5px;
+    }
 }
 
 .offer {
@@ -837,16 +910,21 @@ span {
 .social {
     float: right;
     line-height: 100px;
+
+    & a {
+        width: 32px;
+        height: 32px;
+    }
 }
 
 .square_fa {
     display: inline-block;
-    font: normal normal normal 10px/1 FontAwesome;
     text-rendering: auto;
     color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+    width: 32px;
+    height: 32px;
     padding-left: 5px;
 
     &:hover {
@@ -1300,11 +1378,6 @@ span {
     padding-left: 13px;
 }
 
-.chevron-right {
-    color: $colorSite;
-    padding-top: 16px;
-    padding-right: 13px;
-}
 
 .num_pages {
     height: 44px;
