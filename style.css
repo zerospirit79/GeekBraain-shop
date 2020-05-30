@@ -1062,15 +1062,17 @@ span {
   line-height: 48px;
   -webkit-animation: pulsate-bck 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite both;
           animation: pulsate-bck 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite both;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.image_slide a:hover .chevron-left-woman {
+  color: #f16d7f;
 }
 
 .image_slide .chevron-left-woman {
   height: 15px;
   color: white;
-}
-
-.image_slide .chevron-left-woman:hover {
-  color: #f16d7f;
 }
 
 .product_description {
