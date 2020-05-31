@@ -5,22 +5,57 @@
 
 body {
     font-family: 'Roboto';
+    width: 376px;
+
 }
 
-.center {
-    padding: 0 calc(50% - 376px);
-}
 
 .header {
-    width: 376px;
     height: 376px;
     left: -1px;
     top: 0px;
     background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
+.top__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 24px;
+
+    &_logo {
+        padding-top: 1px;
+
+        &_p {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #316099;
+        }
+
+        &_p1 {
+            width: 31px;
+            height: 31px;
+            border: 1px solid #316099;
+            border-radius: 50%;
+            background-color: white;
+            margin-top: -32px;
+            margin-left: 16px;
+            transition: all 0.3s;
+
+            &:hover {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
 .header__content {
     padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &_h1 {
         color: #1F3F68;
@@ -29,7 +64,7 @@ body {
         line-height: 100%;
         text-align: Center;
         vertical-align: Top;
-        letter-spacing: 4%
+        letter-spacing: 4%;
     }
 
     &_p {
@@ -49,10 +84,140 @@ body {
         color: white;
         width: 108px;
         height: 27px;
+        line-height: 27px;
         text-decoration: none;
         display: block;
         border-radius: 20px;
-        offset: 5px, 10px rgba(53, 110, 173, 0.2);
+        margin-top: 32px;
 
+        &:hover {
+            filter: drop-shadow(5px 10px 20px rgba(53, 110, 173, 0.2));
+        }
+    }
+
+}
+
+.group1 {
+    padding-top: 38px;
+
+    &_h2 {
+        font-style: Light;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        vertical-align: Top;
+        width: 341px;
+        color: black;
+        padding-bottom: 32px;
+    }
+}
+
+.group1__content {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+
+
+
+    &_block {
+        height: 448px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        padding-left: 28px;
+        padding-right: 56px;
+        margin-bottom: 32px;
+
+        &_img {
+            padding-top: 41px;
+
+            &_swg1 {
+                padding-left: 93px;
+            }
+
+            &_swg2 {
+
+                margin-top: -156px;
+                padding-left: 36px;
+                padding-bottom: 17px;
+            }
+        }
+
+        &_h3 {
+            font-size: 20px;
+            line-height: 30px;
+            text-align: left;
+            letter-spacing: 5%;
+            color: #1F3F68;
+        }
+
+        &_p {
+            font-size: 16px;
+            line-height: 26px;
+            text-align: left;
+            letter-spacing: 5%;
+            color: #1F3F68;
+            opacity: 60%;
+        }
+
+        &_a {
+            display: block;
+            text-decoration: none;
+            color: #5A98D0;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: left;
+            margin-left: -188px;
+
+            & .long-arrow-alt-right {
+                width: 14px;
+                height: 14px;
+                padding-left: 9px;
+                color: #5A98D0;
+            }
+
+        }
+    }
+}
+
+.group2 {
+    padding-top: 64px;
+
+    &_h2 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 32px;
+    }
+
+    &_p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #222222;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__mask {
+        width: 343px;
+        height: 144px;
+        border-radius: 10px;
+        background: url(img/group2_1.png) url(img/group2_1_2.png);
+
+        &_p {
+            font-size: 16px;
+            line-height: 19px;
+            text-align: right;
+            padding-top: 16px;
+            color: #FFFFFF;
+            float: right;
+        }
     }
 }
