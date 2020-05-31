@@ -22,6 +22,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
 
     &_logo {
         padding-top: 1px;
@@ -203,21 +205,118 @@ body {
         color: #222222;
         padding-left: 15px;
         padding-right: 15px;
+        padding-bottom: 64px;
     }
 
     &__mask {
         width: 343px;
         height: 144px;
         border-radius: 10px;
-        background: url(img/group2_1.png) url(img/group2_1_2.png);
+        margin-left: 15px;
+        margin-bottom: 16px;
+
+        &_1 {
+            background: url(img/group2_1.png) bottom left no-repeat, linear-gradient(89.97deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%), url(img/group2_1_2.png) 100%;
+        }
+
+        &_2 {
+            height: 255px;
+            background: linear-gradient(317.29deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%), url(img/group2_2_2.png) 100%;
+        }
+
+        &_3 {
+            height: 255px;
+            background: linear-gradient(317.29deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%), url(img/group2_3_2.png) 100%;
+        }
 
         &_p {
             font-size: 16px;
             line-height: 19px;
-            text-align: right;
             padding-top: 16px;
             color: #FFFFFF;
-            float: right;
+            float: left;
+            padding-left: 16px;
+
+            &_1 {
+                float: right;
+                padding-right: 16px;
+            }
         }
+    }
+}
+
+.group3 {
+    height: 310px;
+    background-color: #316099;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #FFFFFF;
+
+    &_h3 {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: white;
+    }
+
+    &_p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+    &_a {
+        display: block;
+        text-decoration: none;
+        width: 108px;
+        height: 31px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        background-color: #5A98D0;
+        color: #FFFFFF;
+    }
+}
+
+.footer {
+    height: 232px;
+    background-color: #316099;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &_ol {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        margin-left: 16px;
+        padding-top: 32px;
+
+        &_li {
+            padding-left: 23px;
+            padding-bottom: 17px;
+        }
+    }
+
+
+    &_p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.4;
     }
 }
