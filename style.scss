@@ -993,7 +993,19 @@ span {
         text-align: center;
         line-height: 48px;
         animation: pulsate-bck 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite both;
+        transition: all 0.3s;
+
+        &:hover .chevron-left-woman {
+            color: $colorSite;
+        }
     }
+
+    & .chevron-left-woman {
+        height: 15px;
+        color: white;
+
+    }
+
 }
 
 
@@ -1091,6 +1103,7 @@ span {
     border: 1px solid rgba(234, 234, 234, 1);
     position: relative;
     padding-left: 37px;
+    color: rgba(188, 188, 188, 1);
 
     &_img {
         position: absolute;
@@ -1165,6 +1178,9 @@ span {
     padding: 12px;
     border-bottom: 1px solid rgba(235, 235, 235, 1);
     width: 243px;
+    display: flex;
+    flow-direction: row;
+    justify-content: space-between;
 }
 
 .li_catalog {
@@ -1173,12 +1189,12 @@ span {
 
 .sortup {
     color: rgba(239, 91, 112, 1);
-    padding-left: 137px;
+    height: 15px;
 }
 
 .sortdown {
     color: rgba(111, 110, 110, 1);
-    padding-left: 137px;
+    height: 15px;
 }
 
 .brand_catalog .sortdown {
@@ -1301,6 +1317,7 @@ span {
     width: 876px;
     background-color: rgba(243, 243, 243, 1);
 
+
     & input {
         margin-top: 10px;
     }
@@ -1335,9 +1352,12 @@ span {
 
 .sordown {
     color: #ccc;
-    margin-left: -30px;
-    margin-top: 17px;
+    margin-left: -39px;
+    margin-top: 16px;
     position: absolute;
+    width: 15px;
+    height: 15px;
+
 }
 
 .man_padding {
@@ -1374,10 +1394,18 @@ span {
 
 .chevron-left {
     color: rgba(170, 170, 170, 1);
-    padding-top: 16px;
+    padding-top: 12px;
     padding-left: 13px;
+    transition: all 0.3s;
+
+    &:hover {
+        color: $colorSite;
+    }
 }
 
+.chevron-left-1 {
+    margin-right: 20px;
+}
 
 .num_pages {
     height: 44px;
@@ -1510,6 +1538,17 @@ span {
     display: flex;
     flex-direction: column;
     padding-left: 21px;
+
+    & a {
+        font-size: 13px;
+        color: rgba(34, 34, 34, 1);
+        text-align: right;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $colorSite;
+        }
+    }
 }
 
 .h3_small_wear {
@@ -1538,6 +1577,11 @@ span {
 
 .cros {
     color: rgba(192, 192, 192, 1);
+    height: 15px;
+
+    &:hover {
+        color: $colorSite;
+    }
 }
 
 .buttons_cards {
