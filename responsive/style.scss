@@ -140,7 +140,6 @@ body {
 
 
     &_block {
-
         height: 448px;
         border-radius: 10px;
         display: flex;
@@ -441,7 +440,226 @@ body {
                 height: 297px;
                 background-size: contain;
             }
+
+            &_p {
+                font-size: 32px;
+                line-height: 46px;
+                text-align: right;
+                letter-spacing: 0.05em;
+                padding-top: 64px;
+                color: #FFFFFF;
+                float: left;
+                padding-left: 16px;
+                margin-left: -61px;
+
+
+                &_1 {
+                    float: right;
+                    padding-left: 16px;
+                    margin-left: 238px;
+                }
+            }
         }
 
     }
+
+    .group3 {
+        flex-wrap: wrap;
+
+        &_h3 {
+            width: 336px;
+            height: 100px;
+            padding-top: 47px;
+        }
+
+        &_p {
+            width: 336px;
+            height: 120px;
+            padding-bottom: 50px;
+        }
+
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        padding: 0 calc(50% - 670px);
+
+    }
+
+    .header {
+        height: 768px;
+
+    }
+
+    .top__menu {
+        padding-top: 42px;
+        padding-left: 112px;
+        padding-right: 112px;
+    }
+
+    .header__content {
+        padding-top: 120px;
+
+        &_left {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &_h1 {
+            max-width: 550px;
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 74px;
+            letter-spacing: 0.04em;
+            color: #1F3F68;
+            text-align: left;
+            margin-left: -479px;
+        }
+
+        &_p {
+            max-width: 425px;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            color: #1F3F68;
+            opacity: 0.6;
+            text-align: left;
+            padding-left: 145px;
+        }
+
+        &_a {
+            width: 220px;
+            height: 56px;
+            line-height: 56px;
+        }
+
+        &_img {
+            display: block;
+            width: 648px;
+            height: 549px;
+            margin-top: -174px;
+            padding-right: 87px;
+        }
+    }
+
+    .group1 {
+        &_h2 {
+            padding-top: 64px;
+
+        }
+
+
+        &__content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 1140px;
+            margin: 0 auto;
+
+            &_block {
+                padding-left: 16px;
+                padding-right: 16px;
+                margin-left: 16px;
+                margin-right: 16px;
+                width: 359px;
+
+                &_a {
+                    margin-left: 5px;
+                }
+            }
+
+
+        }
+
+    }
+
+    .group2 {
+        padding-top: 64px;
+
+        &_h2 {
+            font-size: 36px;
+            line-height: 46px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #000000;
+        }
+
+        &_p {
+            padding-top: 32px;
+            width: 750px;
+            font-size: 16px;
+            line-height: 26px;
+            margin: 0 auto;
+        }
+
+        & div {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &__mask {
+            width: 554px;
+            height: 417px;
+            background-size: contain;
+
+            &_1 {
+                width: 1140px;
+                height: 480px;
+                background-size: contain;
+            }
+
+            &_p {
+                font-size: 32px;
+                line-height: 46px;
+                text-align: right;
+                letter-spacing: 0.05em;
+                padding-top: 64px;
+                color: #FFFFFF;
+                float: left;
+                padding-left: 16px;
+                margin-left: -138px;
+
+
+                &_1 {
+                    float: right;
+                    padding-left: 16px;
+                    margin-left: 604px;
+                }
+            }
+        }
+    }
+
+    .group3 {
+        flex-wrap: wrap;
+        margin-top: 112px;
+
+        &_h3 {
+            width: 340px;
+            height: 100px;
+            padding-top: 47px;
+            font-size: 36px;
+            line-height: 46px;
+        }
+
+        &_p {
+            width: 494px;
+            height: 120px;
+            padding-bottom: 0;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &_a {
+            width: 236.63px;
+            height: 56px;
+            line-height: 56px;
+            margin-top: 100px;
+        }
+    }
+
 }
