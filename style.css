@@ -1062,6 +1062,17 @@ span {
   line-height: 48px;
   -webkit-animation: pulsate-bck 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite both;
           animation: pulsate-bck 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite both;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.image_slide a:hover .chevron-left-woman {
+  color: #f16d7f;
+}
+
+.image_slide .chevron-left-woman {
+  height: 15px;
+  color: white;
 }
 
 .product_description {
@@ -1174,6 +1185,7 @@ span {
   border: 1px solid #eaeaea;
   position: relative;
   padding-left: 37px;
+  color: #bcbcbc;
 }
 
 .color_choise_img {
@@ -1246,6 +1258,13 @@ span {
   padding: 12px;
   border-bottom: 1px solid #ebebeb;
   width: 243px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flow-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .li_catalog {
@@ -1254,12 +1273,12 @@ span {
 
 .sortup {
   color: #ef5b70;
-  padding-left: 137px;
+  height: 15px;
 }
 
 .sortdown {
   color: #6f6e6e;
-  padding-left: 137px;
+  height: 15px;
 }
 
 .brand_catalog .sortdown {
@@ -1423,9 +1442,11 @@ span {
 
 .sordown {
   color: #ccc;
-  margin-left: -30px;
-  margin-top: 17px;
+  margin-left: -39px;
+  margin-top: 16px;
   position: absolute;
+  width: 15px;
+  height: 15px;
 }
 
 .man_padding {
@@ -1471,8 +1492,18 @@ span {
 
 .chevron-left {
   color: #aaaaaa;
-  padding-top: 16px;
+  padding-top: 12px;
   padding-left: 13px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.chevron-left:hover {
+  color: #f16d7f;
+}
+
+.chevron-left-1 {
+  margin-right: 20px;
 }
 
 .num_pages {
@@ -1639,6 +1670,17 @@ span {
   padding-left: 21px;
 }
 
+.small_page_text a {
+  font-size: 13px;
+  color: #222222;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.small_page_text a:hover {
+  color: #f16d7f;
+}
+
 .h3_small_wear {
   padding-top: 13px;
   padding-bottom: 38px;
@@ -1665,6 +1707,11 @@ span {
 
 .cros {
   color: silver;
+  height: 15px;
+}
+
+.cros:hover {
+  color: #f16d7f;
 }
 
 .buttons_cards {
